@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "42ae74ff-26f8-44f2-b139-5ef111fb3f83",
+		"name": "Utopia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19496506"
+	},
+	"item": [
+		{
+			"name": "Frontend API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://uat.utopiatech.in:4520/panel/gettestlist?org_id=3",
+					"protocol": "https",
+					"host": [
+						"uat",
+						"utopiatech",
+						"in"
+					],
+					"port": "4520",
+					"path": [
+						"panel",
+						"gettestlist"
+					],
+					"query": [
+						{
+							"key": "org_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"rutik202\",\r\n    \"password\":\"Abc@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4001/api/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"rutik202\",\r\n    \"password\":\"Abc@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4001/api/logIn"
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg0OTczYTdjNDk0ZTQ5MDBjZmVjZDkiLCJpYXQiOjE2ODY0MTEwNzMsImV4cCI6MTY4OTAwMzA3M30.78cA_hRy2y1xN8Vn3FG_bVQIOcnBkwfbvOSwpAkz41Q\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4001/api/refreshToken"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"rutik202\",\r\n    \"password\":\"Abc@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4001/api/deleteUser"
+			},
+			"response": []
+		},
+		{
+			"name": "Check Access Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg0OTczYTdjNDk0ZTQ5MDBjZmVjZDkiLCJpYXQiOjE2ODY0MTEwNzMsImV4cCI6MTY4NjQxMTE5M30.7y24Rljwhtq9obq-gccKNH01fCEd0IGmMJjgfNGXS6U",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4001/api/getData"
+			},
+			"response": []
+		}
+	]
+}

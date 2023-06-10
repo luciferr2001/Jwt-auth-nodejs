@@ -1,0 +1,51 @@
+-------------------------------------------
+================Sign Up====================
+-------------------------------------------
+Type : POST
+http://localhost:4001/api/signup
+
+Json Payload : {
+    "userName":"rutik202",
+    "password":"Abc@1234"
+}
+
+-------------------------------------------
+================Log In ====================
+-------------------------------------------
+Type : POST
+http://localhost:4001/api/logIn
+
+Json Payload : {
+    "userName":"rutik202",
+    "password":"Abc@1234"
+}
+
+--------------------------------------------------
+================Delete User ====================
+--------------------------------------------------
+Type : DELETE
+http://localhost:4001/api/delete
+
+Json Payload : {
+    "userName":"rutik202",
+    "password":"Abc@1234"
+}
+
+--------------------------------------------------
+================Refresh Token ====================
+--------------------------------------------------
+Type : POST
+http://localhost:4001/api/refreshToken
+
+Json Payload : {
+    "refreshToken":"PASTE REFRESH TOKEN HERE"
+}
+
+--------------------------------------------------
+================Check Access Token ====================
+--------------------------------------------------
+TYPE: GET
+http://localhost:4001/api/getData
+
+Header - x-access-token = "YOUR ACCESS TOKEN"
+
